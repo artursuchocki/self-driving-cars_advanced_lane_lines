@@ -123,14 +123,14 @@ I use `Line()` class to decide if I calculate sliding window from scratch or use
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust? 
 
 ##### Sanity Check
-I implemented check if the lane lines detection makes sense. To confirm that your detected lane lines are real, I consider:
+I implemented check if the lane lines detection makes sense. To confirm that my detected lane lines are real, I consider:
 
 * Checking that they have similar curvature with margin of 200m.
 * Checking that they are separated by approximately the right distance horizontally with margin of 0.5m
 
 
 ##### Look-Ahead Filter
-When I fit a polynomial, then for each y position, I have an x position that represents the lane center from the last frame. Then I search for the new line within +/- some margin around the old line center.
+When I fit a polynomial, then for each y position, I have an x position that represents the lane center from the last frame. Then I search for the new line within +/- 100px margin around the old line center.
 
 
 ##### Reset
