@@ -16,9 +16,9 @@ The goals / steps of this project are the following:
 [image1]: ./writeup_img/undistorted.png "Undistorted"
 [image2]: ./test_images/test5.jpg "Road Transformed"
 [image3]: ./writeup_img/test5_combined_threshold.png "Binary Example"
-[image4]: ./writeup_img/src_dst_points_drawn.jpg "Warp Example"
-[image5]: ./writeup_img/color_fit_lines.jpg "Fit Visual"
-[image6]: ./writeup_img/example_output.jpg "Output"
+[image4]: ./writeup_img/src_dst_points_drawn.png "Warp Example"
+[image5]: ./writeup_img/color_fit_lines.png "Fit Visual"
+[image6]: ./writeup_img/example_output.png "Output"
 [image7]: ./writeup_img/histogram.png
 
 
@@ -55,10 +55,8 @@ I used a combination of color and gradient thresholds to generate a binary image
 
 and then a combined those binary inputs like this:
 `(((gradx == 1) | (grady == 1)) & (mag_binary == 1) | ((S_binary == 1) & (R_binary == 1))) & (dir_binary == 1)`
-return combined
 
 Threshold minimum was set to 100 and threshold maximum was set to 255. For direction sobel threshold was set to (0.7,1.3). Here's an example of my output for this step.  
-
 ![alt text][image3]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
