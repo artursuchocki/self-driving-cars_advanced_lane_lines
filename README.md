@@ -17,7 +17,7 @@ The goals / steps of this project are the following:
 [image2]: ./test_images/test5.jpg "Road Transformed"
 [image3]: ./writeup_img/test5_combined_threshold.png "Binary Example"
 [image4]: ./writeup_img/src_dst_points_drawn.png "Warp Example"
-[image5]: ./writeup_img/color_fit_lines.png "Fit Visual"
+[image5]: ./writeup_img/color_fit_lines.jpg "Fit Visual"
 [image6]: ./writeup_img/example_output.png "Output"
 [image7]: ./writeup_img/histogram.png
 
